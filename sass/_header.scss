@@ -1,0 +1,61 @@
+header {
+  background-image: $colorGradient,
+    url("/Assets/images/backgrounds/bg-header.jpg");
+  background-size: cover;
+  background-position: center;
+
+  & .container {
+    padding-top: 10em;
+    padding-bottom: 1em;
+
+    & button {
+      @extend %myBtn;
+    }
+  }
+
+  #welcome {
+    font : {
+      size: convertFont(60);
+    }
+    text-align: center;
+    color: white;
+    margin: auto;
+    position: relative;
+    &::after {
+      content: " ";
+      position: absolute;
+      height: 4px;
+      background: white;
+      width: 60px;
+      left: 0px;
+      right: 0px;
+      display: block;
+      margin: 30px auto;
+    }
+  }
+
+  h2 {
+    font : {
+      size: convertFont(40);
+    }
+    text-align: center;
+    color: white;
+  }
+
+  p {
+    margin: 0%;
+    padding: 0%;
+  }
+
+  span {
+    font-size: convertFont(20);
+    font-weight: bold;
+  }
+}
+
+/*******************mediaQueries**************/
+@media (max-width: 770px) {
+  #welcome  {
+    display: none !important;
+  }
+}

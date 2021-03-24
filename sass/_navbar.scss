@@ -1,0 +1,57 @@
+.nav-link:hover,
+.nav-item i:hover {
+  color: yellow !important;
+}
+
+.my_nav a.nav-brand {
+  font : {
+    family: "Montserrat Bold";
+    size: convertFont(60);
+    weight: 700;
+  }
+}
+
+.nav-link.active {
+  color: yellow !important;
+  border-bottom: 2px solid yellow;
+}
+
+.fixed-nav #my_nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  display: block;
+  background: $colorGradient;
+  z-index: 999;
+  -webkit-animation-duration: 0.5s;
+  animation-duration: 0.5s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+  -webkit-animation-name: fadeInDown;
+  animation-name: fadeInDown;
+}
+@-webkit-keyframes fadeInDown {
+  0% {
+    opacity: 0;
+    -webkit-transform: translate3d(0, -100%, 0);
+    transform: translate3d(0, -100%, 0);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: none;
+    transform: none;
+  }
+}
+@keyframes fadeInDown {
+  0% {
+    opacity: 0;
+    -webkit-transform: translate3d(0, -100%, 0);
+    transform: translate3d(0, -100%, 0);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: none;
+    transform: none;
+  }
+}

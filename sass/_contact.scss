@@ -1,0 +1,29 @@
+.contact {
+  padding-top: 10em;
+  padding-bottom: 5em;
+  background: #f8f8f8;
+  
+  & h1.f-Logo {
+    color: #cccccc;
+    font-size: convertFont(35);
+    font-family: "Montserrat Bold";
+    font-weight: 1000;
+  }
+  & i.ico {
+    color: $primaryColor;
+  }
+
+  .media p {
+    text-transform: uppercase;
+  }
+  .followers {
+    border-bottom: 1px solid lightgray;
+  }
+
+  .btnSub {
+    font-family: "Montserrat Bold";
+    font-size: convertFont(14);
+    background: $primaryColor;
+    border: none;
+  }
+}

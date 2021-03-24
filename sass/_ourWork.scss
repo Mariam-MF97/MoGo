@@ -1,0 +1,46 @@
+.ourWork {
+ 
+  .my_group {
+    position: relative;
+  }
+  .my_overlay {
+    background: $colorGradient;
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    top: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.2s;
+  }
+  .my_content {
+    color: white;
+    line-height: 50px;
+    text-align: center;
+    display: block;
+    //margin: 0.5em;
+    & h3,
+    & p {
+      text-transform: uppercase;
+    }
+    & i {
+      font-size: convertFont(30);
+    }
+    & h3 {
+      font-size: convertFont(20);
+    }
+    & span {
+      font-size: convertFont(15);
+      font-style: italic;
+    }
+  }
+  & .my_item:hover .my_overlay {
+    opacity: 1;
+  }
+}

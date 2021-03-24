@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "",
+    "sources": [
+        "../../sass/simpleSlider.scss"
+    ],
+    "names": [],
+    "file": "simpleSlider.min.css"
+}

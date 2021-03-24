@@ -1,0 +1,31 @@
+.map {
+  padding: 20px 0;
+  background: url(/Assets/images/backgrounds/bg-map.jpg);
+  background-size: cover;
+  background-position: center;
+
+  & h3:hover {
+    text-decoration: none;
+  }
+  & h3 {
+    color: $secondaryColor;
+    text-decoration: none;
+    font-family: "Montserrat Bold";
+
+    &::after {
+      content: " ";
+      position: absolute;
+      height: 4px;
+      background: $secondaryColor;
+      width: 60px;
+      left: 0px;
+      right: 0px;
+      display: block;
+      margin: 20px auto;
+    }
+  }
+  & i {
+    font-size: convertFont(30);
+    color: $secondaryColor;
+  }
+}

@@ -1,0 +1,51 @@
+.whatWeDo {
+ 
+  .panel-group {
+    margin: 0;
+    & .panel + .panel {
+      margin-top: 0.5em;
+    }
+  }
+  .panel-default {
+    border-color: #e5e5e5;
+    border-radius: 0;
+  }
+  .panel-title {
+    border: 0.5px solid lightgrey;
+    color: black;
+    text-decoration: none;
+    font-size: convertFont(20);
+    & a {
+      display: block;
+      padding: 15px 10px 10px 50px;
+      position: relative;
+      text-decoration: none;
+    }
+    & i {
+      position: absolute;
+      left: 10px;
+      top: 13px;
+      font-size: convertFont(30);
+      color: $primaryColor;
+    }
+    .arrow {
+      left: auto;
+      right: 10px;
+      color: lightgrey;
+    }
+    .collapsed .arrow {
+      transform: rotate(180deg);
+    }
+  }
+  .panel-body {
+    border: 0.5px solid lightgrey;
+    margin-top: 0;
+    padding-top: 0;
+    padding-bottom: 5px;
+    padding-left: 5px;
+    border-top: none;
+    font-style: italic;
+    font-size: convertFont(13);
+    font-weight: 300;
+  }
+}

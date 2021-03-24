@@ -1,0 +1,25 @@
+.ourTeam {
+
+  & .content .icon {
+    display: inline-block;
+    font-size: convertFont(20);
+    color: $secondaryColor;
+    background: $hoverColor;
+    padding: 10px;
+    line-height: 100%;
+    //width: 50px;
+
+    &:hover {
+      color: white;
+      background: $secondaryColor;
+    }
+  }
+
+  .name {
+    font : {
+      size: convertFont(15);
+      weight: bold;
+    }
+    text-transform: uppercase;
+  }
+}

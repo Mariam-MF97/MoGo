@@ -1,0 +1,32 @@
+.uniqueDesign {
+  padding-top: 5em;
+  .container {
+    padding: 0;
+  }
+  padding-bottom: 0;
+  margin-bottom: 2em;
+  background: url(/Assets/images/backgrounds/bg-unique-design.jpg) no-repeat
+    center center;
+  background-size: cover;
+
+  .devices {
+    position: relative;
+
+    & .ipad {
+      width: 380px;
+    }
+    & .iphone {
+      position: absolute;
+      bottom: -60px;
+      left: 46%;
+      margin-left: 140px;
+      width: 170px;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .iphone {
+    display: none;
+  }
+}

@@ -1,0 +1,27 @@
+.services {
+  
+  i {
+    font-size: convertFont(30);
+    color: $primaryColor;
+  }
+
+  .item {
+    background-color: white;
+  }
+  .item:not(:nth-last-child(-3)) {
+    border-bottom: 1px solid lightgray;
+    margin-bottom: 50px;
+    padding-bottom: 40px;
+  }
+  .title {
+    font : {
+      weight: 600;
+      family: "Montserrat Regular";
+      size: convertFont(15);
+    }
+    text-transform: uppercase;
+  }
+  .info {
+    width: 70%;
+  }
+}

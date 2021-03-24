@@ -1,0 +1,15 @@
+.blogs {
+  .badge {
+    left: -20px;
+    bottom: 8px;
+    background-color: $primaryColor;
+    color: white;
+    font-size: convertFont(15);
+  }
+  .card-title {
+    font-size: convertFont(20);
+  }
+  i {
+    color: $primaryColor;
+  }
+}
